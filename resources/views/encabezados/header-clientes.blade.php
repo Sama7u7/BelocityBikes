@@ -25,6 +25,9 @@
         </li>      
 
       </ul>
+      <span class="navbar-text">
+        Contador
+      </span>
     </div>
   </div>
 </nav>
