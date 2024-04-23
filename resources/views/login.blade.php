@@ -36,7 +36,6 @@
             <input type="submit" class="fadeIn fourth" value="Iniciar Sesión">
         </form>
         
-
         <!-- Remind Passowrd -->
         <div id="formFooter">
             <a class="underlineHover" href="#">Olvidaste tu contraseña?</a>

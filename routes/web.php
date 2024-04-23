@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,8 +21,9 @@ Route::get('/', function () {
 Route::get('/inicio', function () {
     return view('welcome');
 });
+
 Route::get('/login', function () {
-    return view('inicio-sesion');
+    return view('login');
 });
 
 Route::post('/login', [LoginController::class, 'valida'])->name('login'); 
