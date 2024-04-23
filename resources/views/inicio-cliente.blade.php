@@ -16,7 +16,7 @@
 
 <body>
 
-@include('encabezados.header-usuarios')
+@include('encabezados.header-clientes')
 
     <div class="row">
         <!-- ESPACIO A LOS LADOS -->
@@ -35,7 +35,7 @@
                         </p>
                         <p class="card-text">Ahorras $5,910
                         </p>
-                        <a href="/login" class="btn btn-primary" onclick="addToCart('Fathon 29 1', 35900, 1, 'https://images2.giant-bicycles.com/b_white%2Cc_pad%2Ch_400%2Cq_80%2Cw_600/pnft7kcgiy2qirrrkcb9/MY22Fathom291_ColorAAmberGlow.jpg')">Añadir al carrito</a>
+                        <a href="#" class="btn btn-primary" onclick="addToCart('Fathon 29 1', 35900, 1, 'https://images2.giant-bicycles.com/b_white%2Cc_pad%2Ch_400%2Cq_80%2Cw_600/pnft7kcgiy2qirrrkcb9/MY22Fathom291_ColorAAmberGlow.jpg')">Añadir al carrito</a>
                     </div>
                 </div>
                 <!-- fin tarjeta -->
@@ -49,7 +49,7 @@
                         </p>
                         <p class="card-text">Ahorras $1,800
                         </p>
-                        <a href="/login" class="btn btn-primary" onclick="addToCart('Talon 2', 13990, 1, 'https://images2.giant-bicycles.com/b_white%2Cc_pad%2Ch_400%2Cq_80%2Cw_600/kkigqu3s4mlndjfiy769/MY22Talon292_ColorAKnightShield.jpg')">Añadir al carrito</a>
+                        <a href="#" class="btn btn-primary" onclick="addToCart('Talon 2', 13990, 1, 'https://images2.giant-bicycles.com/b_white%2Cc_pad%2Ch_400%2Cq_80%2Cw_600/kkigqu3s4mlndjfiy769/MY22Talon292_ColorAKnightShield.jpg')">Añadir al carrito</a>
                     </div>
                 </div>
 
@@ -62,7 +62,7 @@
                         </p>
                         <p class="card-text">Ahorras $2,000
                         </p>
-                        <a href="/login" class="btn btn-primary" onclick="addToCart('Talon 4', 11990, 1, 'https://images2.giant-bicycles.com/b_white%2Cc_pad%2Ch_400%2Cq_80%2Cw_600/ssnyhzock3aaty3hbrzl/MY22Talon294_ColorAMetallicBlack.jpg')">Añadir al carrito</a>
+                        <a href="#" class="btn btn-primary" onclick="addToCart('Talon 4', 11990, 1, 'https://images2.giant-bicycles.com/b_white%2Cc_pad%2Ch_400%2Cq_80%2Cw_600/ssnyhzock3aaty3hbrzl/MY22Talon294_ColorAMetallicBlack.jpg')">Añadir al carrito</a>
                     </div>
                 </div>
 
@@ -93,7 +93,7 @@
                         </p>
                         <p class="card-text">Ahorras $2,910
                         </p>
-                        <a href="/login" class="btn btn-primary" onclick="addToCart('XTC ADVANCED 29 2', 69990, 1, 'https://images2.giant-bicycles.com/b_white%2Cc_pad%2Ch_400%2Cq_80%2Cw_600/cnxweqj6opmsmfenmxte/MY22XTCAdvanced292_ColorABlack.jpg')">Añadir al carrito</a>
+                        <a href="#" class="btn btn-primary" onclick="addToCart('XTC ADVANCED 29 2', 69990, 1, 'https://images2.giant-bicycles.com/b_white%2Cc_pad%2Ch_400%2Cq_80%2Cw_600/cnxweqj6opmsmfenmxte/MY22XTCAdvanced292_ColorABlack.jpg')">Añadir al carrito</a>
                     </div>
                 </div>
 
@@ -106,7 +106,7 @@
                         </p>
                         <p class="card-text">Ahorras $5,000
                         </p>
-                        <a href="/login" class="btn btn-primary" onclick="addToCart('Talon E+ 3', 54990, 1, 'https://images2.giant-bicycles.com/b_white%2Cc_pad%2Ch_400%2Cq_80%2Cw_600/l6rutyf2yjuljmultiu1/MY21-Talon-Eplus-3-29_Color-A-Blue-Ashes.jpg')">Añadir al carrito</a>
+                        <a href="#" class="btn btn-primary" onclick="addToCart('Talon E+ 3', 54990, 1, 'https://images2.giant-bicycles.com/b_white%2Cc_pad%2Ch_400%2Cq_80%2Cw_600/l6rutyf2yjuljmultiu1/MY21-Talon-Eplus-3-29_Color-A-Blue-Ashes.jpg')">Añadir al carrito</a>
                     </div>
                 </div>
 
@@ -120,7 +120,7 @@
                         </p>
                         <p class="card-text">Ahorras $1,100
                         </p>
-                        <a href="/login" class="btn btn-primary" onclick="addToCart('Escape 3 Disc', 13490, 1, 'https://images2.giant-bicycles.com/b_white%2Cc_pad%2Ch_400%2Cq_80%2Cw_600/khshpgw9qmkiyzmcyina/MY21-Escape-3-Disc_Color-A-Metallic-Black.jpg')">Añadir al carrito</a>
+                        <a href="#" class="btn btn-primary" onclick="addToCart('Escape 3 Disc', 13490, 1, 'https://images2.giant-bicycles.com/b_white%2Cc_pad%2Ch_400%2Cq_80%2Cw_600/khshpgw9qmkiyzmcyina/MY21-Escape-3-Disc_Color-A-Metallic-Black.jpg')">Añadir al carrito</a>
                     </div>
                 </div>
 

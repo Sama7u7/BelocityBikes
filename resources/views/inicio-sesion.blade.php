@@ -23,16 +23,19 @@
         </div>
 
         <!-- Login Form -->
-        <form action="procesar-credenciales.php" method="POST">
-            <p>
-                <input type="text" name="nickname" placeholder="Usuario">
-            </p>
-            <p>
-                <input type="text" name="password" placeholder="Contraseña">
-            </p>
-            
-            <input type="submit" class="fadeIn fourth" value="Iniciar sesion">
+        <form action="{{ route('login') }}" method="post">
+            @csrf <!-- Agrega el token CSRF para protección contra CSRF -->
+            <input type="text" name="email" placeholder="Correo electrónico" required>
+            @error('email')
+                <span>{{ $message }}</span>
+            @enderror
+            <input type="text" name="password" placeholder="Contraseña" required>
+            @error('password')
+                <span>{{ $message }}</span>
+            @enderror
+            <input type="submit" class="fadeIn fourth" value="Iniciar Sesión">
         </form>
+        
 
         <!-- Remind Passowrd -->
         <div id="formFooter">
@@ -42,8 +45,4 @@
     </div>
 </div>
 </div>
-
-
-
-
 </html>

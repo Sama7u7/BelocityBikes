@@ -14,22 +14,24 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('inicio');
 });
 
 Route::get('/inicio', function () {
-    return view('inicio');
+    return view('welcome');
 });
 Route::get('/login', function () {
     return view('inicio-sesion');
 });
 
+Route::post('/login', [LoginController::class, 'valida'])->name('login'); 
+
 // Rutas para las vistas de los distintos roles
-Route::view('/cliente', 'cliente')->name('cliente');
-Route::view('/Contador', 'contador')->name('contador');
-Route::view('/encargado', 'encargado')->name('encargado');
-Route::view('/supervisor', 'supervisor')->name('supervisor');
-Route::view('/vendedor', 'vendedor')->name('vendedor');
+Route::view('/cliente', 'inicio-cliente')->name('cliente');
+Route::view('/contador', 'inicio-contador')->name('contador');
+Route::view('/encargado', 'inicio-encargado')->name('encargado');
+Route::view('/supervisor', 'inicio-supervisor')->name('supervisor');
+Route::view('/vendedor', 'inicio-vendedor')->name('vendedor');
 
 // Ruta por defecto en caso de que no se encuentre un rol específico para el usuario
 Route::view('/default', 'default')->name('default');
