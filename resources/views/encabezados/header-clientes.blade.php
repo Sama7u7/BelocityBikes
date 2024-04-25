@@ -25,6 +25,9 @@
         </li>      
 
       </ul>
+      <span class="navbar-text">
+        Cliente
+      </span>
     </div>
   </div>
 </nav>
