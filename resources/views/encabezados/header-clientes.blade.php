@@ -26,7 +26,7 @@
 
       </ul>
       <span class="navbar-text">
-        Contador
+        cliente
       </span>
     </div>
   </div>
