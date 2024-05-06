@@ -19,5 +19,10 @@ class SupervisorSeeder extends Seeder
         'email' => 'supervisor@gmail.com',
         'password' => bcrypt('supervisor@gmail.com'),
     ]);
+    Usuario::create([
+        'role' => 'supervisor',
+        'email' => 'supervisor2@gmail.com',
+        'password' => bcrypt('supervisor2@gmail.com'),
+    ]);
     }
 }

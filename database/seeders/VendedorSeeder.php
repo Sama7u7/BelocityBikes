@@ -18,5 +18,31 @@ class VendedorSeeder extends Seeder
             'email' => 'vendedor@gmail.com',
             'password' => bcrypt('vendedor@gmail.com'),
         ]);
+
+        Usuario::create([
+            'role' => 'vendedor',
+            'email' => 'vendedor2@gmail.com',
+            'password' => bcrypt('vendedor@gmail.com'),
+        ]);
+        Usuario::create([
+            'role' => 'vendedor',
+            'email' => 'vendedor2@gmail.com',
+            'password' => bcrypt('vendedor2@gmail.com'),
+        ]);
+        Usuario::create([
+            'role' => 'vendedor',
+            'email' => 'vendedor3@gmail.com',
+            'password' => bcrypt('vendedor3@gmail.com'),
+        ]);
+        Usuario::create([
+            'role' => 'vendedor',
+            'email' => 'vendedor4@gmail.com',
+            'password' => bcrypt('vendedor5@gmail.com'),
+        ]);
+        Usuario::create([
+            'role' => 'vendedor',
+            'email' => 'vendedor5@gmail.com',
+            'password' => bcrypt('vendedor5@gmail.com'),
+        ]);
     }
 }

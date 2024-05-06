@@ -16,5 +16,16 @@ class EncargadoSeeder extends Seeder
             'email' => 'encargado@gmail.com',
             'password' => bcrypt('encargado@gmail.com'),
         ]);
+        Usuario::create([
+            'role' => 'encargado',
+            'email' => 'encargado2@gmail.com',
+            'password' => bcrypt('encargado2@gmail.com'),
+        ]);
+        Usuario::create([
+            'role' => 'encargado',
+            'email' => 'encargado3@gmail.com',
+            'password' => bcrypt('encargado3@gmail.com'),
+        ]);
+        
     }
 }
