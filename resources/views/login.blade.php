@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BELOCITY - INICIO DE SESION</title>
+    <title>SAMAZON-INICIO DE SESION</title>
 
     <link href="{{ asset('css/style.css') }}"  rel="stylesheet">
 

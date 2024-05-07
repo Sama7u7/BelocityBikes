@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>BELOCITY - DALE RUEDAS A LA VIDA</title>
+<title>SAMAZON-DASHBOARD-ENCARGADO</title>
 
 <link href="https://cdn.jsdelivr.net/npm/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
 
@@ -17,7 +17,8 @@
 
 @include('encabezados.header-encargado')
 
-   <H1> Este es el apartado del Encargado</H1>
+   <H1> Hola Encargado</H1>
+   
 
        
 

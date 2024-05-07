@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>BELOCITY - Dashboard</title>
+<title>SAMAZON-Dashboard-CLIENTE</title>
 <link href="https://cdn.jsdelivr.net/npm/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
 
 <script src="https://cdn.jsdelivr.net/npm/gridjs/dist/gridjs.umd.js"></script>
@@ -26,11 +26,7 @@
 
       </ul>
       <span class="navbar-text">
-<<<<<<< HEAD
-        cliente
-=======
         Cliente
->>>>>>> ad4ec2c304171b755cfa6d65ec6006832c1fb4f0
       </span>
     </div>
   </div>

@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<title>BELOCITY - DALE RUEDAS A LA VIDA</title>
+<title>SAMAZON-DASHBOARD-VENDEDOR</title>
 
 <link href="https://cdn.jsdelivr.net/npm/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
 
