@@ -13,6 +13,21 @@ class ProductoController extends Controller
     /**
      * Display a listing of the resource.
      */
+    public function productosPorCategoria($categoriaId)
+    {
+        $categoria = Categoria::findOrFail($categoriaId);
+        $productos = Producto::where('categoria_id', $categoriaId)->get();
+    
+        return view('productos_por_categoria_cliente', compact('categoria', 'productos'));
+    }
+    public function productosPorCategoriaUser($categoriaId)
+    {
+        $categoria = Categoria::findOrFail($categoriaId);
+        $productos = Producto::where('categoria_id', $categoriaId)->get();
+    
+        return view('productos_por_categoria_user', compact('categoria', 'productos'));
+    }
+
     public function index()
     {
         $encontrados = Producto::all();

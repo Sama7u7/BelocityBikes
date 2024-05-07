@@ -21,7 +21,7 @@
           <a class="nav-link active" aria-current="page" href="#">Principal</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Categorias</a>
+          <a class="nav-link" href="/categoriasuser">Categorias</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/login">Iniciar sesion</a>

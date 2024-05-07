@@ -5,18 +5,43 @@ namespace Database\Seeders;
 use App\Models\Producto;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-
 class ProductosSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     */
     public function run(): void
     {
-        //
+        // Crear 30 productos propuestos
+        for ($i = 1; $i <= 30; $i++) {
+            Producto::create([
+                'nombre' => "ProductoConsignado " . $i,
+                'imagen' => '', 
+                'estado' => 'consignado',
+                'fecha_publicacion' => date('Y-m-d'), 
+                'motivo' => null, 
+                'descripcion' => 'Descripción del producto ' . $i,
+                'cantidad' => 1,
+                'categoria_id' => rand(1, 5), 
+                'propietario_id' => 1 
+                
+            ]);
+        }
+
+        for ($i = 1; $i <= 20; $i++) {
+            Producto::create([
+                'nombre' => "ProductoConsignado " . $i,
+                'imagen' => '', 
+                'estado' => 'propuesto',
+                'fecha_publicacion' => date('Y-m-d'), 
+                'motivo' => null, 
+                'descripcion' => 'Descripción del producto ' . $i,
+                'cantidad' => 1,
+                'categoria_id' => rand(1, 5), 
+                'propietario_id' => 1 
+            ]);
+        }
+        
         Producto::create([
             'nombre' => 'Teléfono inteligente Samsung Galaxy S20',
-            'imagen' => '',
+            'imagen' => 'https://cdn1.coppel.com/images/catalog/mkp/1042/10000/10429024-1.jpg',
             'fecha_publicacion' => '2024-05-06',
             'motivo' => '',
             'descripcion' => 'Teléfono móvil de gama alta con pantalla AMOLED de 6.2 pulgadas, cámara de 64 MP, y 128 GB de almacenamiento.',
@@ -562,10 +587,6 @@ Producto::create([
     'categoria_id' => '5',
     'propietario_id' => '5'
 ]);
-
-
-        
-
         
     }
-}
+    }

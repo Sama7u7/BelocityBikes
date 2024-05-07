@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\CategoriaController;
+use App\Http\Controllers\ProductoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,6 +19,8 @@ use App\Http\Controllers\CategoriaController;
 Route::get('/', function () {
     return view('inicio');
 });
+Route::get('/categoriasuser', [CategoriaController::class, 'indexuser'])->name('categorias.indexuser');
+Route::get('/productos/user/{categoria}', [ProductoController::class, 'productosPorCategoriaUser'])->name('productosPorCategoriaUser');
 
 Route::get('/inicio', function () {
     return view('welcome');
@@ -31,6 +34,9 @@ Route::post('/login', [LoginController::class, 'valida'])->name('login');
 
 // Rutas para las vistas de los distintos roles
 Route::view('/cliente', 'inicio-cliente')->name('cliente');
+Route::get('/categorias/cliente', [CategoriaController::class, 'index2'])->name('categorias.index2');
+Route::get('/productos/{categoria}', [ProductoController::class, 'productosPorCategoria'])->name('productosPorCategoria');
+
 Route::view('/contador', 'inicio-contador')->name('contador');
 Route::view('/encargado', 'inicio-encargado')->name('encargado');
 Route::view('/supervisor', 'inicio-supervisor')->name('supervisor');
@@ -45,15 +51,6 @@ Route::post('/categorias', [CategoriaController::class, 'destroy'])->name('categ
 Route::get('/categorias/delete', [CategoriaController::class, 'delete'])->name('categorias.delete');
 
 Route::resource('categorias', CategoriaController::class);
-
-
-
-/*
-Route::get('/categorias/create', 'CategoriaController@create')->name('categorias.create');
-Route::get('/read-categorias', 'CategoriaController@read')->name('read');
-Route::get('/update-categorias', 'CategoriaController@update')->name('update');
-Route::get('/delete-categorias', 'CategoriaController@delete')->name('delete');
-*/
 
 // Ruta por defecto en caso de que no se encuentre un rol específico para el usuario
 Route::view('/default', 'default')->name('default');

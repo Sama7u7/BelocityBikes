@@ -4,15 +4,45 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Categoria;
+use App\Models\Producto;
 use Illuminate\Support\Facades\Auth;
 class CategoriaController extends Controller
 {
     
+    public function productosPorCategoria($categoriaId)
+{
+    $categoria = Categoria::findOrFail($categoriaId);
+    $productos = Producto::where('categoria_id', $categoriaId)->get();
+
+    return view('productos_por_categoria', compact('categoria', 'productos'));
+}
+public function productosPorCategoriauser($categoriaId)
+{
+    $categoria = Categoria::findOrFail($categoriaId);
+    $productos = Producto::where('categoria_id', $categoriaId)->get();
+
+    return view('productos_por_categoria', compact('categoria', 'productos'));
+}
+
     public function index()
     {
         $categorias = Categoria::all();
     
         return view('categorias', compact('categorias'));
+    }
+
+    public function index2()
+    {
+        $categorias = Categoria::all();
+    
+        return view('categoriacliente', compact('categorias'));
+    }
+
+    public function indexuser()
+    {
+        $categorias = Categoria::all();
+    
+        return view('categoriauser', compact('categorias'));
     }
 public function create()
 {
@@ -23,7 +53,7 @@ public function create()
 {
     // Validar los datos del formulario
     $request->validate([
-        'nombre' => 'required|string|max:255|unique:categorias,nombre', // Asegúrate de que el nombre sea único
+        'nombre' => 'required|string|max:255|unique:categorias,nombre', 
     ]);
 
     // Crear la nueva categoría
